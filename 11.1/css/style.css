@@ -1,0 +1,63 @@
+body {
+	margin : 0;
+	padding: 0;
+}
+
+button:focus {
+	outline: none;
+}
+
+.container {
+	display: flex;
+	position: relative;
+	background: url('../img/chuck_norris.jpg') 0/cover;
+	height: 100vh;
+	width: auto;
+	justify-content: center;
+	align-items: center;
+}
+
+.joke-area {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	width: 600px;
+	height: 200px;
+	border-radius: 20px;
+	background-color: rgba(0,0,0, 0.5);
+	padding: 20px;
+	border: 2px dashed white;
+}
+
+.joke-area p {
+	color: white;
+	font-size: 25px;
+	text-shadow: 1px 1px 1px #CCC;
+}
+
+#get-joke {
+	position: absolute;
+	top: 80vh;
+	width: 300px;
+	height: 100px;
+	background: transparent;
+	border: 2px solid white;
+	border-radius: 10px;
+	color: white;
+	font-size: 20px;
+	background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+	background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+	transition: 0.5s;
+	webkit-transition: 0.5s;
+	background-position: 100% 0;
+	background-size: 300%;
+	text-shadow: 2px 2px 10px #000;
+	cursor: pointer;
+}
+
+#get-joke:hover {
+	background-position: 0 100%;
+	color: white;
+	background-size: 300%;
+}
