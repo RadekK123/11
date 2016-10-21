@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+section.container {
+
+	margin: 0;
+	position: relative;
+	background: #000 url('https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=74553159742c7cf05c6eb04baabc408c') center/cover;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+}
+
+section.container .header {
+	display: block;
+	padding-top: 20px;
+	margin: 0;	
+}
+
+h1 {
+	font-size: 40px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	font-weight: 300;
+	text-shadow: 1px 1px 10px white;
+}
+
+.content {
+	height: 53px;
+	width: 100%;
+}
+
+button {
+	display: inline-block;
+	height: 50px;
+	width: 150px;
+	margin-right: 10px;
+	background-color: rgba(0,0,0, 0.4);
+	border: 1px solid white;
+	box-shadow: 1px 1px 5px white;
+	font-size: 20px;
+	text-shadow: 1px 1px 5px black;
+	font-family: 'Roboto';
+	color: white;
+	text-align: center;
+}
+
+button:focus, input:focus {
+	box-shadow: 1px 1px 15px white;
+	outline: none;
+}
+
+input {
+	display: inline-block;
+	height: 50px;
+	width: 200px;
+	background-color: rgba(0,0,0, 0.4);
+	border: 1px solid white;
+	box-shadow: 1px 1px 5px white;
+	font-size: 20px;
+	text-shadow: 1px 1px 5px black;
+	font-family: 'Roboto';
+	color: white;
+	text-align: center;
+	margin-bottom: 3px;
+}
+
+#countries {
+	display: inline-block;
+	margin-top: 40px;
+	height: 50vh;
+	width: 50vw;
+	background-color: rgba(0,0,0, 0.5);
+	border-radius: 10px;
+}
+#countries:hover {
+	box-shadow: 0px 0px 15px white;
+}
+
+#countries h2 {
+	display: inline-block;
+	margin-top: 15px;
+	font-size: 20px;
+	color: white;
+	font-weight: 500;
+}
+
+#countries li:first-child {
+	display: inline-block;
+	text-align: center;
+	margin-top: 15px;
+	font-size: 30px;
+	color: white;
+	font-weight: 700;
+	width: 100%;
+	margin-bottom: 20px;
+	border-bottom: 1px solid rgba(0,0,0, 0);
+}
+
+#countries li:not(:first-child) {
+	display: inline-block;
+	text-align: center;
+	margin-top: 15px;
+	font-size: 20px;
+	color: white;
+	font-weight: 500;
+	width: 40%;
+	margin-right: 5%;
+	margin-left: 5%;
+	border-bottom: 1px solid rgba(0,0,0, 0);
+}
+#countries li:nth-child(n):hover {
+	border-bottom: 1px solid white;
+}
+
