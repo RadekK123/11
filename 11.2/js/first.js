@@ -1,5 +1,3 @@
-//js file
-
 $(document).ready(function () {
 	getQuote();
 	$('.trigger').click(function () {
@@ -7,21 +5,11 @@ $(document).ready(function () {
 	});
 
 	var tweetLink = 'https://twitter.com/intent/tweet?text=';
-	var quoteUrl = 'http://api.forismatic.com/api/1.0/?method=getQuote&key=867576&format=jsonp&lang=en&jsonp=?";';
+	var quoteUrl = 'http://api.forismatic.com/api/1.0/?method=getQuote&key=867576&format=jsonp&lang=en&jsonp=?';
 
 	function getQuote () {
-	$.ajax({
-		dataType: 'json',
-		url: quoteUrl,
-		data: null,
-		success: createTweet
-		});
-	}
-	/*/
-	
-	function getQuote () {
 		$.getJSON(quoteUrl, createTweet);
-	}*/
+	}
 
 	function createTweet (input) {
 		if(!input.quoteAuthor.length) {
@@ -40,12 +28,6 @@ $(document).ready(function () {
 		}
 	}
 });
-
-
-
-
-
-
 
 
 
