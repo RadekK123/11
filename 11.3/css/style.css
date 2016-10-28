@@ -134,15 +134,7 @@ input {
 	border-bottom: 1px solid white;
 }
 
-.text-example p {
-	display: inline-block;
-	width: 40%;
-	height: auto;
-	margin-top: 50px;
-	font-size: 20px;
-	color: white;
-	animation: wobble 3s;
-}
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 .bounce {
   -webkit-animation-name: bounce;
