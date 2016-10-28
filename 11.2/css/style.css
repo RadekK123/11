@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Roboto');
+
+body {
+	background-color: #55ACEE;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+* {
+	font-family: 'Indie Flower', cursive;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	display: inline-block;
+	margin-top: 100px;
+	color: white;
+	font-size: 40px;
+	text-shadow: 1px 1px 5px #000;
+	font-family: 'Roboto';
+}
+
+.box {
+	display: inline-block;
+	/*background: transparent;*/
+	border: 2px solid white;
+	border-radius: 10px;
+	width: 70%;
+	background-color: (255,255,255, 0.1);
+}
+
+h2 {
+	display: inline-block;
+	height: 100px;
+	width: 70%;
+	font-size: 26px;
+	color:white;
+	text-shadow: 1px 1px 2px #000;
+	font-family: 'Indie Flower', cursive;
+}
+
+h3 {
+	display: inline-block;
+	height: 50px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	width: 100%;
+	font-size: 18px;
+	font-family: 'Roboto';
+	color: white;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.pos-center{
+	display: block;
+	text-align: center;
+}
+button, a {
+	margin-top: 20px;
+	display: inline-block;
+	padding: 40px 80px;
+	border: 2px solid white;
+	border-radius: 5px;
+	background-color: transparent;
+	font-family: 'Roboto';
+	font-size: 20px;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+	cursor: pointer;
+	margin-right: 15px;
+	text-decoration: none;
+	box-shadow: 1px 1px 15px white;
+}
+
+button{
+	animation: scale 2s infinite;
+	animation-iteration-count: 3;
+}
+
+button:focus, a:focus {
+	box-shadow: 1px 1px 15px black;
+	outline: none;
+}
+
+button:hover, a:hover {
+	box-shadow: 1px 1px 15px black;
+	text-decoration: none;
+	color: white !important;
+}
+
+a {
+	color:white;
+	text-decoration: none;
+}
+
+i.fa {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	background-color: transparent;
+	color: white;
+	text-shadow: 2px 2px 5px black;
+}
+
+@keyframes scale {
+	0% { transform: scale(1); 
+		 background: transparent;
+	}
+	50% { transform: scale(1.2); 
+		  background: white;
+		  color: black;
+		  text-shadow: 1px 1px 1px #CCC;
+		  box-shadow: 1px 1px 15px black;
+	}
+	100% { transform: scale (1); 
+		   background: transparent;
+	}
+}
