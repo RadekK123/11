@@ -3,14 +3,31 @@ var url = 'https://restcountries.eu/rest/v1/name/';
 var countriesList = $('#countries');
 var input = $('#country-name');
 
+
 $('#search').click(searchCountries);
 
 function searchCountries () {
 	var countryName = $('#country-name').val();
 	
 	if (countryName.length < 3){
-		input.val('Wpisz min 3 znaki');
 		countryName = 'Poland';
+		var errorInfo = function () {
+			$('<p>Wpisz min. 3 znaki</p>').appendTo('.error').css({
+				animation : 'bounce .5s',
+			});
+		};
+
+		var errorInnfoDelete = function () {
+			$('.error p').css({
+				animation : 'flash .4s',
+			});
+			setTimeout(function deleteElem (){
+				$('.error p').remove();
+			},400);
+		};
+		
+		setTimeout(errorInfo, 1000);
+		setTimeout(errorInnfoDelete, 5000);
 	}
 
 	$.ajax ({
