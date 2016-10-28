@@ -10,7 +10,7 @@ function searchCountries () {
 	var countryName = $('#country-name').val();
 	
 	if (countryName.length < 3){
-		countryName = 'Poland';
+		
 		var errorInfo = function () {
 			$('<p>Wpisz min. 3 znaki</p>').appendTo('.error').css({
 				animation : 'bounce .5s',
@@ -30,11 +30,13 @@ function searchCountries () {
 		setTimeout(errorInnfoDelete, 5000);
 	}
 
+	if(countryName.length >= 3) {
 	$.ajax ({
 		url: url + countryName,
 		method: 'GET',
 		success: showCountriesList,
 	});
+	}
 }
 
 function showCountriesList (resp) {
